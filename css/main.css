@@ -1,0 +1,95 @@
+:root{
+        --default-nav-list-color: white;
+        --default-font:  'Exo 2', sans-serif;
+        --default-border: 1px dashed black; 
+        --default-nav-font:  'Exo 2', sans-serif;
+
+}
+* {
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+    color:#FFFFFF;
+    font-family: var(--default-font);
+}
+main{
+    margin: auto;
+}
+header{
+    margin: 0px;
+    max-width:100%;
+}
+.header-background{
+    background-color: black;
+    max-width:100%;
+
+}
+.header-img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 80px;
+    height: 80px;  
+}
+.nav-list{
+    margin-top:50px;
+    margin-bottom:50px;
+    color: var(--default-nav-list-color);
+}
+.a-class{
+    color:var(--default-nav-list-color);
+    font-family: var(--default-nav-font);
+    margin-right: 40px;
+    margin-left: 15px;
+   
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: var(--default-font);
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-width: 360px){
+    .header-img{width:30vw;height:30vw;}
+}
+@media screen and (min-width: 360px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+
+  }
