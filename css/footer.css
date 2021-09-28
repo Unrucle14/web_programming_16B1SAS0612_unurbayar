@@ -28,9 +28,8 @@
 }
 .footer_logo{
     width:4%;height:4%}
-@media screen and (max-width:360px){
-    .footer_logo > img{width:25vw;
-    height:25vw;}
+@media screen and (max-width:450px){
+    .footer_logo { display:none;}
     .short_links{
         margin-left:0%;
         margin-right:0%;
