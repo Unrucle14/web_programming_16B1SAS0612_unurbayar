@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">    
 </head>
 <body>
+    <div id="internetcheck"   class="online-for-connection">Интернет холболт тасарсан байна </div>
     <header>
         <div  class="header-background">
             <a href="index.html"><img class="header-img" src="images/hacker.svg" alt="this web page's header logo"></a>
@@ -64,6 +65,19 @@
      </footer>
      <script type="module" src="modules/news1.js"></script>
 <script>
+    // 3 second tutamd check4connection-g ajilluulj offline esvel online baigaag shalgana.
+setInterval(check4connection, 3000) 
+// offline or online
+function check4connection(){
+if(navigator.onLine){
+   let online = document.getElementById("internetcheck");
+   online.classList.remove("offline-for-connection")
+}
+else{
+     let offline = document.getElementById("internetcheck");
+     offline.classList.add("offline-for-connection")
+}
+}
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
     }
@@ -71,7 +85,7 @@
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
-    </script>
+</script>
     
   
 </body>
