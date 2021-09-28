@@ -28,8 +28,9 @@ export class aboutUs{
     }
     Render(){
         return `
-        <h2>${this._garchig}</h2>
-        <p>${this._bie}</p>
+        <h1   class="align-center" style="font-family: var(--default-font);">Бидний тухай</h1>
+        <h2  class="align-center" style="font-family: var(--default-font);">${this._garchig}</h2>
+        <p   class="align-center margin-space-for-aboutus-p"  style="font-family: var(--default-font);">${this._bie}</p>
                  `
     }
 }

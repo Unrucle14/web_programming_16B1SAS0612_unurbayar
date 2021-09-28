@@ -27,8 +27,8 @@
     font-size: 4vw;
 }
 .main_p{
-    font-family:'Exo 2', sans-serif;
-    font-size: 2vw;
+    font-family: var(--default-font);
+    font-size: 1.5vw;
     text-align: justify;
 }
 .more-news{
@@ -50,6 +50,6 @@
     .main_p{font-size:5vw;}
     .more_news_h2{font-size: 7vw;}
     .more_news_h1{font-size: 7vw;}
-    .code_in_shell{font-size:3vw;}
-    .prompt_name{font-size:3vw;}
+    .code_in_shell{font-size:4vw;}
+    .prompt_name{font-size:4vw;}
 }

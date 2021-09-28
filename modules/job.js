@@ -29,13 +29,13 @@ export class  ajil{
     }
     Render(){
         return `
-        <h1> Ажлын байр</h1>
-        <h1>-------------------------------------------------------------</h1>
-        <p>${this._name}</p>
-        <p>Тавигдах шаардлага: ${this._requirement}</p>
-        <p>Нас: ${this._age}</p>
-        <p>Боловсрол: ${this._education}</p>
-        <p>Цалин: ${this._salary}</p>
+        <h1 class="align-center" style="font-family: var(--default-font);"> Ажлын байр</h1>
+        <h1 class="align-center remove-dash" style="font-family: var(--default-font);">-------------------------------------------------------------</h1>
+        <p  class="align-center" style="font-family: var(--default-font);">${this._name}</p>
+        <p class="align-center" style="font-family: var(--default-font);">Тавигдах шаардлага: ${this._requirement}</p>
+        <p  class="align-center" style="font-family: var(--default-font);">Нас: ${this._age}</p>
+        <p  class="align-center" style="font-family: var(--default-font);">Боловсрол: ${this._education}</p>
+        <p class="align-center" style="font-family: var(--default-font);">Цалин: ${this._salary}</p>
         `
     }
 }

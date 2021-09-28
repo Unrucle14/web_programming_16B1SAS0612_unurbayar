@@ -85,6 +85,22 @@ header{
   font-size: 36px;
   margin-left: 50px;
 }
+.align-center{
+    text-align: center;
+    
+}
+.margin-space-for-aboutus-p{
+    margin-left: 7vw;
+    margin-right: 7vw; 
+}
+.margin-space-for-ads-p{
+    margin-left: 7vw;
+    margin-right: 7vw; 
+}
+.center-for-table{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
 @media screen and (max-width: 360px){
     .header-img{width:30vw;height:30vw;}
 }

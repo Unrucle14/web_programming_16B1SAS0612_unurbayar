@@ -132,10 +132,10 @@
 .list{
   display:grid;
   grid-template-columns: 180px 180px 180px;
-  margin-left: 0;
   padding-left: 0;
   border: 1px solid rgd(0,0,0);
   list-style-type: none;
+  margin-left:30vw;
 }
 .list li{
   width:180px;
@@ -153,4 +153,80 @@
   text-align: center;
   text-transform: uppercase;
 }
-/*advertisement-iin hustnegtiin stylesheet*/
+/*Sponsord zoriulsan CSS*/
+.main-for-sponsor{
+  text-align: center;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  font-family: var(--default-font);
+}
+.h1-for-sponsor{
+  font-size:3vw;
+}
+.gold{
+  font-size:2vw;
+  color: #FFD700;
+}
+.silver{
+  font-size:2vw;
+  color:	#C0C0C0;
+}
+.p-for-sponsor{
+  text-align: justify;
+  font-size: 1vw;
+}
+.h3-for-sponsor{
+  font-size: 1.5vw;
+}
+
+/*Mobile version-d zoriulsan*/
+@media screen and (max-width: 450px){
+  .news-list{
+    flex:100%;
+    text-align: justify;
+    padding:1vw;
+    border: 1px solid grey;
+    border-radius: 1vw;
+  }
+  .remove-dash{
+    display:none;
+  }
+  .list{
+    display:grid;
+    grid-template-columns:180px;
+    padding-left: 0;
+    border: 1px solid rgd(0,0,0);
+    list-style-type: none;
+    margin-left:25vw;
+  }
+   /*sponsor mobile version*/
+  .main-for-sponsor{
+    text-align: center;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    font-family: var(--default-font);
+  }
+  .h1-for-sponsor{
+    font-size:7vw;
+  }
+  .h3-for-sponsor{
+    font-size: 6vw;
+  }
+  .gold{
+    font-size:5vw;
+    color: #FFD700;
+  }
+  .silver{
+    font-size:5vw;
+    color:	#C0C0C0;
+  }
+  .p-for-sponsor{
+    text-align: justify;
+    font-size: 4vw;
+  }
+  .picture-4-sponsor{
+    width:60vw;
+    height:60vw;
+  }
+  
+}

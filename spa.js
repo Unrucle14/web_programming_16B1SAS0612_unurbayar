@@ -1,8 +1,15 @@
+ // `use strict` ni javascript codiig strict mode luu shiljiil 
+//zarlaagui huvisagch ashiglaxaas uridchilan sergiilne ee.
+//`use strict`
 import { medeeHevlex, newsList } from "/modules/newsList.js";
 import { bidniiTuhaiHevlex, aboutUs } from "./modules/aboutus.js";
 import { adsRender, ads } from "./modules/advertisement.js";
 import { contactHevlex, contact } from "./modules/contact.js";
 import { ajilHevlex, ajil } from "./modules/job.js";
+import { MyApp,Support } from "./modules/sponsor.js";
+
+
+
 
 
 //newsList-iin URL
@@ -16,11 +23,12 @@ medeeHevlex(url1,
 )
 
 //aboutus-iin URL
+
 const url2 = "https://api.jsonbin.io/b/615028549548541c29b89111/latest"
 
-bidniiTuhaiHevlex(url2, 
+    bidniiTuhaiHevlex(url2, 
     (bidtuhaimed)=>{
-        bidtuhaimed.forEach(element => {document.querySelector('.container').insertAdjacentHTML('beforebegin', element.Render())})
+        bidtuhaimed.forEach(element => {document.querySelector('.container').insertAdjacentHTML('afterend', element.Render())})
     }
     )
 
@@ -39,7 +47,7 @@ contactHevlex(url3,
     {
         
         contactuud.forEach(element => {document.querySelector('.container')
-    .insertAdjacentHTML('beforebegin',element.Render())})}
+    .insertAdjacentHTML('afterend',element.Render())})}
     )
 
 //job-iin URL
@@ -51,5 +59,7 @@ ajilHevlex(url4, (jobs)=>
 {
     
     jobs.forEach(element => {document.querySelector('.container')
-.insertAdjacentHTML('beforebegin',element.Render())})}
+.insertAdjacentHTML('afterend',element.Render())})}
 )
+
+

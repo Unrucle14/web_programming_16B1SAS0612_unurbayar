@@ -24,9 +24,9 @@ export class  contact{
     }
     Render(){
         return `
-                <h2>Холбогдох мэдээлэл</h2>
-                <p>Утасны дугаар:${this._mobile_number}</p>
-                <p>Email хаяг:${this._email_address}</p>
-                <p>Хаяг:${this._address}</p>`
+                <h1 class="align-center" style="font-family: var(--default-font);">Холбогдох мэдээлэл</h1>
+                <p class="align-center" style="font-family: var(--default-font);">Утасны дугаар:${this._mobile_number}</p>
+                <p class="align-center" style="font-family: var(--default-font);">Email хаяг:${this._email_address}</p>
+                <p class="align-center" style="font-family: var(--default-font);">Хаяг:${this._address}</p>`
     }
 }
