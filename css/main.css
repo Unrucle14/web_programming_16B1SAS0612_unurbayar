@@ -109,3 +109,19 @@ header{
     .sidenav a {font-size: 18px;}
 
   }
+
+.online-for-connection{
+    display: none;
+    
+}
+.offline-for-connection{
+    display:block;
+    position:fixed;
+    color:#FFFFFF;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2vw;
+    background-color: red;
+    margin-left:38vw;
+    border-radius: 2vw;
+    padding: 1vw;
+}

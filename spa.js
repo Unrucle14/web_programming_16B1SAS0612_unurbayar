@@ -63,3 +63,16 @@ ajilHevlex(url4, (jobs)=>
 )
 
 
+// 3 second tutamd check4connection-g ajilluulj offline esvel online baigaag shalgana.
+setInterval(check4connection, 3000) 
+// offline or online
+function check4connection(){
+if(navigator.onLine){
+   let online = document.getElementById("internetcheck");
+   online.classList.remove("offline-for-connection")
+}
+else{
+     let offline = document.getElementById("internetcheck");
+     offline.classList.add("offline-for-connection")
+}
+}
